@@ -1,0 +1,21 @@
+extends layout.pug
+block append  head
+    title Cadastro
+    link(href="/cadastro/css/cadastro.css" rel="stylesheet")
+block  content
+
+    include includes/header.pug
+    div(style='display: flex; justify-content: center;')
+        .pageTitle Cadastro de tarefas
+            if erro
+                .alert.alert-danger(role='alert')
+                    p=erro
+    .backGround
+        form(method='POST', action='/cadastro/salvar')
+            .pageDimension
+                div(style='display: flex; flex-direction: column;')
+                    label.textTitles Tarefa
+                    input#formGroupExampleInput.form-control(type='text', name='tarefainput', placeholder='Insira sua tarefa aqui' required)
+            div(style='float: right; margin-top: 15px; flex-direction: row; display:flex')
+                button.buttonOption(type='submit', style='background: rgb(15, 225, 20);', title='Cadastrar')
+                    i.fas.fa-check(style='color: white;')

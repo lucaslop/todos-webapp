@@ -1,0 +1,12 @@
+version: '3'
+services:
+  app:
+    image: todos
+    build: .
+    command: node index.js
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+   

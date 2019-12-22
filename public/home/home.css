@@ -1,0 +1,80 @@
+body {
+    background: #007DFF;
+    color: #444;
+    font-family: "Open Sans", sans-serif;
+}
+
+#img {
+    width: 70%;
+    height: 60%;
+    margin-left: 15%
+}
+
+.section-header h3 {
+    font-size: 36px;
+    color: #FFFF;
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+}
+
+.section-header p {
+    text-align: center;
+    margin: auto;
+    font-size: 15px;
+    padding-bottom: 60px;
+    color: #333333;
+    width: 50%;
+}
+
+.section-bg {
+    background: #007DFF;
+}
+
+#tarefas {
+    padding: 60px 0 40px 0;
+}
+
+#tarefas .box {
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0 10px 40px 10px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+
+#tarefas .box:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+#tarefas .description {
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+#newtarefa {
+    align-content: center;
+    align-items: center;
+    margin-left: 46%;
+    margin-top: 1%;
+}
+
+#warning {
+    margin-top: 4%;
+    margin-left: 42%;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .section-header p {
+        width: 100%;
+    }
+}

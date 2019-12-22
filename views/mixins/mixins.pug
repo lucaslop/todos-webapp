@@ -1,0 +1,6 @@
+mixin card(conteudo)
+    .col-md-6.col-lg-4.wow.bounceInUp(data-wow-duration='1.4s',id=conteudo)
+        .box
+            p.description #{conteudo}
+            tr
+            button(type="submit",class="btn btn-danger", onclick='sendPost("'+ conteudo +'")') Excluir

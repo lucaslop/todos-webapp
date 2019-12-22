@@ -1,0 +1,29 @@
+extends layout.pug
+
+block append head
+
+  script(src='http://code.jquery.com/jquery-2.2.0.min.js', type='text/javascript')
+  link(href='home/home.css', rel='stylesheet')
+  script(src="script.js")
+  include ./mixins/mixins.pug
+
+block content
+
+  - var lenght = tarefas.length
+  case lenght
+    when 0
+      .alert.alert-warning#warning(role="alert" style="width: 15rem;") Não há nenhuma tarefa!
+      img#img(src="/home/image.png")
+      a(href="/cadastro")
+        button(type="button" class="btn btn-success" id="newtarefa") Nova Tarefa
+    default
+      section#tarefas.section-bg
+        .container
+          header.section-header
+            h3 Tarefas
+            p  
+          .row
+            each conteudo in tarefas
+              +card(conteudo)
+      a(href="/cadastro")
+        button(type="button" class="btn btn-success" id="newtarefa") Nova Tarefa
