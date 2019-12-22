@@ -17,7 +17,7 @@ Há duas formas de executar o projeto, com o Docker e pelo npm.
 
 ### Instalando com o npm
 
-1. Na pasta todos-app execute o comando `npm install`
+1. Na pasta todos-webapp execute o comando `npm install`
 
 2. Execute o comando  `npm start`
 
